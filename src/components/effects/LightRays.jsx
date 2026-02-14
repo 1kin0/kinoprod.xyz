@@ -1,4 +1,4 @@
-import LightRaysShader from '../../shader/LightRaysShader.jsx'
+import LightRaysShader from '/src/shaders/LightRaysShader.jsx'
 
 export default function LightRays() {
     return (

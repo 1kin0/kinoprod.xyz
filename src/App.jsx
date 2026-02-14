@@ -7,7 +7,8 @@ import './App.css'
 import Header from './components/Header.jsx'
 
 //Shaders
-import FaultyTerminal from './components/fxs/FaultyTerminal.jsx'
+import FaultyTerminal from './components/effects/FaultyTerminal.jsx'
+import LightRays from './components/effects/LightRays.jsx'
 
 //Vercel
 import { Analytics } from "@vercel/analytics/react"
@@ -23,19 +24,7 @@ function App() {
       <FaultyTerminal/>
 
       <h1>Vite + React</h1>
-
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p>Welcome to my homepage!</p>
 
       <Analytics/>
       <SpeedInsights/>

@@ -1,4 +1,4 @@
-import FaultyTerminalShader from '../../shader/FaultyTerminalShader.jsx'
+import FaultyTerminalShader from '/src/shaders/FaultyTerminalShader.jsx'
 
 export default function FaultyTerminal() {
     return (
