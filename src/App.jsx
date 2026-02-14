@@ -101,27 +101,27 @@ function App() {
 
             <Card>
               <h3>Card 1</h3>
-              <p>Your content here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
               <h3>Card 2</h3>
-              <p>Your content here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
               <h3>Card 3</h3>
-              <p>Your content here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
               <h3>Card 4</h3>
-              <p>Your content here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
 
             <Card>
               <h3>Card 5</h3>
-              <p>Your content here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </Card>
           </CardSwap>
       </section>
@@ -137,7 +137,7 @@ function App() {
             className="custom-text-style"
           />
           <CurvedLoop 
-            marqueeText="✦ c++ ✦ py3 ✦ html  ✦ css ✦ js "
+            marqueeText="✦ c++ ✦ py3 ✦ js "
             speed={1.2}
             curveAmount={-400}
             direction="left"
