@@ -79,6 +79,7 @@ function App() {
           <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
           <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
           <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
+          <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
         </div>
       </section>
 
