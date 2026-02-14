@@ -10,7 +10,7 @@ import Footer from './components/Footer.jsx'
 import LightRays from './components/effects/LightRays.jsx'
 import CurvedLoop from './components/effects/CurvedLoop.jsx'
 import ShinyText from './components/effects/ShinyText.jsx'
-import MagicBento from './components/effects/MagicBento.jsx'
+import SpotlightCard from './components/effects/SpotlightCard.jsx'
 
 //Vercel
 import { Analytics } from "@vercel/analytics/react"
@@ -23,7 +23,7 @@ function App() {
       <Header/>
 
       <section className='w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='home'>
-        <div className='LightEffect'>
+        <div id='light-effect'>
           <LightRays
               raysOrigin="top-center"
               raysColor="#ffffff"
@@ -71,9 +71,15 @@ function App() {
         <h1 className='p-2 text-4xl'>Skills</h1>
       </section>
 
-      <section className= 'bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='projects'>
+      <section className='bg-gray-800 text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
         <h1>Projects</h1>
         <p className='text-gray-500'>A lot of unusual works</p>
+        <div id='card-grid'>
+          <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
+          <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
+          <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
+          <SpotlightCard className="item-card" spotlightColor="#1E2839"></SpotlightCard>
+        </div>
       </section>
 
       <section className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
