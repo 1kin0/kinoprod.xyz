@@ -133,7 +133,7 @@ function App() {
         <div className='w-full absolute'>
           <CurvedLoop 
             marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
-            speed={0.7}
+            speed={1}
             curveAmount={600}
             direction="right"
             interactive
@@ -141,14 +141,19 @@ function App() {
           />
           <CurvedLoop 
             marqueeText="✦ c++ ✦ py3 ✦ js ✦ lua "
-            speed={1.2}
+            speed={1}
             curveAmount={-400}
-            direction="left"
+            direction="right"
             interactive
             className="custom-text-style"
           />
         </div>
-        <h1 className='p-2 text-4xl'>Skills</h1>
+        <div className='text-6xl'>
+          <ShinyText
+            text='Skills'
+            speed={2}
+          />
+        </div>
         <img src={strokeSvg} alt="stroke" className='z-1 w-3xs'/>
       </section>
 
@@ -164,7 +169,7 @@ function App() {
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
-        <div className='text-5xl'>
+        <div className='text-6xl'>
           <ShinyText
             text='Dm me'
             speed={2}
