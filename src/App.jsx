@@ -45,11 +45,11 @@ function App() {
         <p className='text-gray-500'>Welcome to my homepage!</p>
       </section>
 
-      <section className='bg-gray-800 text-gray-300 w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
+      <section className='bg-gray-800 text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
         <h1 className='p-2 text-4xl'>Introducing</h1>
       </section>
 
-      <section className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
+      <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
         <div className='w-full absolute'>
           <CurvedLoop 
             marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
@@ -82,7 +82,7 @@ function App() {
         </div>
       </section>
 
-      <section className= 'w-lvw h-lvh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
+      <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
         <div className='text-5xl'>
           <ShinyText
             text='Dm me <3'
