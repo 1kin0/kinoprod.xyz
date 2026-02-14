@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Header from './components/Header.jsx'
-import Dither from './components/Dither.jsx'
+import LightRays from './components/fx/LightRays.jsx'
 
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-     <Header/>
-     <Dither/>
+      <Header/>
+      <LightRays/>
 
       <h1>Vite + React</h1>
 

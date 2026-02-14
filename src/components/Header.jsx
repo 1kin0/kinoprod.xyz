@@ -5,7 +5,7 @@ export default function Header() {
 
     return (
         <header>
-            <div className='flex flex-row gap-5'>
+            <div className='flex flex-row gap-4'>
                 <img src={viteLogo} alt="Logo" className='w-6'/>
                 <h2 className='text-2xl'>kinoprod</h2>
             </div>
