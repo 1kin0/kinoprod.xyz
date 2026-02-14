@@ -3,9 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+//Components
 import Header from './components/Header.jsx'
-import LightRays from './components/fx/LightRays.jsx'
 
+//Shaders
+import FaultyTerminal from './components/fxs/FaultyTerminal.jsx'
+
+//Vercel
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
@@ -16,7 +20,7 @@ function App() {
   return (
     <>
       <Header/>
-      <LightRays/>
+      <FaultyTerminal/>
 
       <h1>Vite + React</h1>
 
