@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import arrowSvg from './assets/arrow.svg'
+import heartSvg from './assets/heart.svg'
+import strokeSvg from './assets/stroke.svg'
 
 //Components
 import Header from './components/Header.jsx'
@@ -88,7 +91,7 @@ function App() {
 
       <section className='bg-gray-800 text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
         <h1 className='p-2 text-4xl z-1'>Introducing</h1>
-        <img src="./assets/arrow.svg" alt="arrow" className='z-1 w-3xs'/>
+        <img src={arrowSvg} alt="arrow" className='z-1 w-3xs'/>
         <CardSwap
             cardDistance={70}
             verticalDistance={100}
@@ -143,7 +146,7 @@ function App() {
           />
         </div>
         <h1 className='p-2 text-4xl'>Skills</h1>
-        <img src="./assets/stroke.svg" alt="stroke" className='z-1 w-3xs'/>
+        <img src={strokeSvg} alt="stroke" className='z-1 w-3xs'/>
       </section>
 
       <section className='bg-gray-800 text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
@@ -161,7 +164,7 @@ function App() {
             speed={2}
           />
         </div>
-        <img src="./assets/heart.svg" alt="heart" className='m-6 w-18'/>
+        <img src={heartSvg} alt="heart" className='m-6 w-18'/>
       </section>
 
       <Analytics/>
