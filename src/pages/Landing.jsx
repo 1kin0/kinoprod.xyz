@@ -18,17 +18,17 @@ function CreateProjectCards() {
     first: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
       title: 'weathium',
-      link: ''
+      link: 'https://github.com/1kin0?tab=repositories'
     },
     second: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
       title: 'blurry',
-      link: ''
+      link: 'https://github.com/1kin0?tab=repositories'
     },
     third: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
       title: '',
-      link: ''
+      link: 'https://github.com/1kin0?tab=repositories'
     },
     fourth: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
@@ -38,7 +38,7 @@ function CreateProjectCards() {
     fifth: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
       title: 'verc.im',
-      link: ''
+      link: 'https://github.com/1kin0?tab=repositories'
     },
     last: {
       description: 'will be here!',
@@ -82,7 +82,7 @@ const Landing = () => {
           />
         </div>
 
-        <h1 className='font-bold italic' id='title'>Vercim</h1>
+        <h1 id='title'>Vercim</h1>
         <p id='descr'>Welcome to my homepage</p>
       </section>
 
@@ -92,33 +92,33 @@ const Landing = () => {
         <CardSwap
             cardDistance={150}
             verticalDistance={70}
-            delay={6000}
+            delay={10000}
             pauseOnHover={false}
         >
 
             <Card>
-              <h1>Target 1</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <h1>Webdev</h1>
+              <p>I build modern web apps with Next.js, React, and TypeScript. Love SSR/SSG for SEO and speed, Tailwind for styling, API integrations. Deployed personal projects on Vercel: from SPAs to full sites with animations. Ready to turn your idea into a fast, responsive product. Let’s discuss!</p>
             </Card>
 
             <Card>
-              <h1>Target 2</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <h1>Bots</h1>
+              <p>I specialize in automation via Discord and Telegram bots: slash commands with discord.js, Telegraf/Python. Add databases (SQLite/PostgreSQL), notifications, moderation, external integrations. Built bots for communities and personal tasks — parsing to games. Need your own helper?</p>
             </Card>
 
             <Card>
-              <h1>Target 3</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <h1>DevOps</h1>
+              <p>Experienced in infra: Docker containers, GitHub Actions for CI/CD, deploy on Railway/Vercel/Linux servers. Handle monoliths and microservices, optimize for prod. Worked with VPS, Nginx, autoscaling. Make deployment simple and reliable — from local to cloud. Your project in a container in a day!</p>
             </Card>
 
             <Card>
-              <h1>Objective</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <h1>Video</h1>
+              <p>Passionate about videography and photography: collect Sony Digital8/VHS cameras, edit in DaVinci Resolve/Premiere with animations and effects. Create content for streams, YouTube, sites — retro videos to digital art. Integrate web widgets (Spotify/SoundCloud). Want a stylish clip? Check my portfolio!</p>
             </Card>
 
             <Card>
-              <h1>Subjective</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <h1>Networks</h1>
+              <p>Network pro: VPN setup (VLESS, Trojan, Hysteria2, Shadowsocks), traffic obfuscation, Linux servers. Protocols for privacy and anti-censorship. Automate via scripts, test with Wireshark. Perfect for secure apps and bots. Need to protect your traffic?</p>
             </Card>
           </CardSwap>
 
@@ -126,8 +126,8 @@ const Landing = () => {
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
-        <h1 id='title' className='italic'>Skills</h1>
-        <img src={strokeSvg} alt="stroke" className='z-1 w-62'/>
+        <h1 id='title'>Skills</h1>
+        <img src={strokeSvg} alt="stroke" className='z-1 w-60'/>
         <div className='w-full absolute top-5'>
           <CurvedLoop 
             marqueeText="✦ c ✦ py ✦ js ✦ lua "
@@ -139,7 +139,7 @@ const Landing = () => {
       </section>
 
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
-        <h1 id='title' className='italic mt-6'>Projects</h1>
+        <h1 id='title' className='mt-6'>Projects</h1>
         <p id='descr'>A lot of unusual works</p>
 
         <div id='card-grid'>

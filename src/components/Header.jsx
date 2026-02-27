@@ -1,8 +1,6 @@
 import sunLogo from '/sun.png'
 
 export default function Header() {
-    const now = new Date()
-
     return (
         <header>
             <div className='flex flex-row items-center gap-8'>
@@ -16,7 +14,7 @@ export default function Header() {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <span>{now.toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit'})}</span>
+            <span>demo version</span>
         </header>
     )
 }

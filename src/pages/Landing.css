@@ -62,6 +62,8 @@
 
 #title {
   font-size: 4.5rem;
+  font-style: italic;
+  @apply font-bold
 }
 
 #descr {
