@@ -16,27 +16,27 @@ import CardSwap, { Card } from '/src/components/effects/CardSwap.jsx'
 function CreateProjectCards() {
   const projectsList = {
     first: {
-      description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
+      description: 'Discord bot for instant weather updates: current conditions, forecasts, and smart notifications anywhere.',
       title: 'weathium',
       link: 'https://github.com/1kin0?tab=repositories'
     },
     second: {
-      description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
+      description: 'Edit images and apply fun effects or stickers directly in your Discord chats effortlessly.',
       title: 'blurry',
       link: 'https://github.com/1kin0?tab=repositories'
     },
     third: {
-      description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
+      description: 'Experienced dev open for collaboration on bots, web apps, DevOps projects—reach out anytime!',
       title: '',
       link: 'https://github.com/1kin0?tab=repositories'
     },
     fourth: {
-      description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
+      description: 'Coming soon: exciting new project in development—stay tuned for updates and features.',
       title: '',
       link: ''
     },
     fifth: {
-      description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
+      description: 'Sleek portfolio site showcasing my dev projects, tech skills, and easy contact options.',
       title: 'verc.im',
       link: 'https://github.com/1kin0?tab=repositories'
     },
@@ -140,7 +140,7 @@ const Landing = () => {
 
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
         <h1 id='title' className='mt-6'>Projects</h1>
-        <p id='descr'>A lot of unusual works</p>
+        <p id='descr' className='mb-6'>A lot of unusual works</p>
 
         <div id='card-grid'>
           {CreateProjectCards()}
