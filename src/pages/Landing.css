@@ -12,9 +12,9 @@
 #card-grid {
   display: grid;
   width: inherit;
-  gap: 35px;
+  gap: 45px;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 70%;
+  width: 60%;
   margin: 50px;
 }
 
