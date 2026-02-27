@@ -71,3 +71,11 @@
   padding: 0.5px 8px;
   @apply text-gray-500;
 }
+
+#circle-glow {
+  position: absolute;
+  background-color: #ff000078;
+  width: 80px;
+  height: 170px;
+  filter: blur(50px);
+}

@@ -151,12 +151,15 @@ const Landing = () => {
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
       <img src={heartSvg} alt="heart" className='m-6 w-40'/>
+      <div id='circle-glow'></div>
+
         <div className='text-6xl'>
           <ShinyText
             text='Dm me'
             speed={2}
           />
         </div>
+
         <span id='descr'>
           <a href="">tg</a>, <a href="">ds</a>, <a href="">mail</a>, etc.
         </span>
