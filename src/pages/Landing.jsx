@@ -17,33 +17,33 @@ function CreateProjectCards() {
   const projectsList = {
     first: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
-      title: 'first',
-      link: 'https://github.com'
+      title: 'weathium',
+      link: ''
     },
     second: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
-      title: 'second',
-      link: 'https://roblox.com'
+      title: 'blurry',
+      link: ''
     },
     third: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
-      title: 'third',
-      link: 'https://microsoft.com'
+      title: '',
+      link: ''
     },
-    thirdV2: {
+    fourth: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
-      title: 'thirdV2',
-      link: 'https://microsoft.com'
-    },
-    quad: {
-      description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
-      title: 'quad',
-      link: 'https://google.com'
+      title: '',
+      link: ''
     },
     fifth: {
       description: 'my test first project abla blo bloa lblaadoe with testing test lal lao',
-      title: 'fifth',
-      link: 'https://google.com'
+      title: 'verc.im',
+      link: ''
+    },
+    last: {
+      description: 'will be here!',
+      title: 'your idea',
+      link: '#contact'
     },
   };
   
@@ -51,7 +51,7 @@ function CreateProjectCards() {
     <>
       {Object.values(projectsList).map((project, index) => (
         <SpotlightCard key={project.title || index}>
-          <a href={project.link}><h2 className="text-xl font-bold">{project.title}</h2></a>
+          <a href={project.link}><h2 className="text-3xl font-bold">{project.title}</h2></a>
           <span className="text-gray-400">{project.description}</span>
         </SpotlightCard>
       ))}
@@ -82,19 +82,18 @@ const Landing = () => {
           />
         </div>
 
-        <h1 className='p-1 text-9xl'>Welcome</h1>
-        <p className='text-gray-500'>to my homepage</p>
+        <h1 className='font-bold italic' id='title'>Vercim</h1>
+        <p id='descr'>Welcome to my homepage</p>
       </section>
 
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
-        <h1 className='p-2 text-4xl z-1'>Introducing</h1>
-        <img src={arrowSvg} alt="arrow" className='z-1 w-3xs'/>
+        <h1 className='p-2 z-1 -rotate-6 italic' id='title'>Introducing</h1>
+        <img src={arrowSvg} alt="arrow" className='z-1 w-80'/>
         <CardSwap
-            cardDistance={70}
-            verticalDistance={100}
-            delay={5000}
+            cardDistance={150}
+            verticalDistance={70}
+            delay={6000}
             pauseOnHover={false}
-            className='z-1'
         >
 
             <Card>
@@ -127,31 +126,21 @@ const Landing = () => {
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='skills'>
-        <div className='w-full absolute'>
+        <h1 id='title' className='italic'>Skills</h1>
+        <img src={strokeSvg} alt="stroke" className='z-1 w-62'/>
+        <div className='w-full absolute top-5'>
           <CurvedLoop 
-            marqueeText="✦ rbx ✦ ue5 ✦ unity ✦ web "
-            speed={1}
-            curveAmount={600}
-            direction="right"
-            interactive
-            className="custom-text-style"
-          />
-          <CurvedLoop 
-            marqueeText="✦ c++ ✦ py3 ✦ js ✦ lua "
-            speed={1}
-            curveAmount={-400}
-            direction="right"
-            interactive
-            className="custom-text-style"
+            marqueeText="✦ c ✦ py ✦ js ✦ lua "
+            speed={0.8}
+            curveAmount={580}
+            direction="left"
           />
         </div>
-        <h1>Skills</h1>
-        <img src={strokeSvg} alt="stroke" className='z-1 w-3xs'/>
       </section>
 
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden py-12' id='projects'>
-        <h1>Projects</h1>
-        <p className='text-gray-500'>A lot of unusual works</p>
+        <h1 id='title' className='italic mt-6'>Projects</h1>
+        <p id='descr'>A lot of unusual works</p>
 
         <div id='card-grid'>
           {CreateProjectCards()}
@@ -161,13 +150,16 @@ const Landing = () => {
       </section>
 
       <section className= 'w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='contact'>
+      <img src={heartSvg} alt="heart" className='m-6 w-40'/>
         <div className='text-6xl'>
           <ShinyText
             text='Dm me'
             speed={2}
           />
         </div>
-        <img src={heartSvg} alt="heart" className='m-6 w-20'/>
+        <span id='descr'>
+          <a href="">tg</a>, <a href="">ds</a>, <a href="">mail</a>, etc.
+        </span>
       </section>
     </>
   )

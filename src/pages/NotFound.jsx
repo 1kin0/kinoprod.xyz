@@ -12,7 +12,7 @@ const NotFound = () => {
                     }
                 `}</style>
                 <h1 className="text-9xl italic font-bold">404 NOT FOUND</h1>
-                <img src="sun.png" alt="Logo" className="rotate w-22"/>
+                <img src="sun.png" alt="Logo" className="rotate w-18 m-3"/>
             </div>
         </>
     )
