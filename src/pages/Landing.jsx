@@ -88,7 +88,7 @@ const Landing = () => {
 
       <section className='bg-transparent text-gray-300 w-lvw min-h-svh flex flex-col items-center justify-center relative overflow-hidden' id='about'>
         <h1 className='p-2 z-1 -rotate-6 italic' id='title'>Introducing</h1>
-        <img src={arrowSvg} alt="arrow" className='z-1 w-80'/>
+        <img src={arrowSvg} alt="arrow" className='relative z-1 w-80 max-[900px]:w-40 right-30'/>
         <CardSwap
             cardDistance={150}
             verticalDistance={70}
@@ -97,28 +97,28 @@ const Landing = () => {
         >
 
             <Card>
-              <h1>Webdev</h1>
-              <p>I build modern web apps with Next.js, React, and TypeScript. Love SSR/SSG for SEO and speed, Tailwind for styling, API integrations. Deployed personal projects on Vercel: from SPAs to full sites with animations. Ready to turn your idea into a fast, responsive product. Let’s discuss!</p>
+              <h1>Frontend</h1>
+              <p>Frontend developer focused on Next.js and React. I build fast, SEO-optimized apps with SSR/SSG, TypeScript, and Tailwind. My approach: clean code, responsive design, API integrations. Portfolio includes SPAs, landing pages, and dashboards on Vercel. Goal: scalable web that delights users.</p>
             </Card>
 
             <Card>
               <h1>Bots</h1>
-              <p>I specialize in automation via Discord and Telegram bots: slash commands with discord.js, Telegraf/Python. Add databases (SQLite/PostgreSQL), notifications, moderation, external integrations. Built bots for communities and personal tasks — parsing to games. Need your own helper?</p>
+              <p>Bots expert for Discord/Telegram using discord.js and Python/Telegraf. Develop with DBs (PostgreSQL), webhooks, moderation, AI integrations. Approach: modular code, error-handling, scalability. Portfolio: bots for 10k+ users, task automation. Goal: simplify routines with smart scripts.</p>
             </Card>
 
             <Card>
               <h1>DevOps</h1>
-              <p>Experienced in infra: Docker containers, GitHub Actions for CI/CD, deploy on Railway/Vercel/Linux servers. Handle monoliths and microservices, optimize for prod. Worked with VPS, Nginx, autoscaling. Make deployment simple and reliable — from local to cloud. Your project in a container in a day!</p>
+              <p>DevOps specialist: Docker, CI/CD (GitHub Actions), deploy on Vercel/Railway/Linux VPS. Set up monoliths/microservices, Nginx, monitoring. Approach: zero-downtime, automation, security-first. Portfolio: full pipelines for web apps. Goal: stable, cost-effective launches.</p>
             </Card>
 
             <Card>
-              <h1>Video</h1>
-              <p>Passionate about videography and photography: collect Sony Digital8/VHS cameras, edit in DaVinci Resolve/Premiere with animations and effects. Create content for streams, YouTube, sites — retro videos to digital art. Integrate web widgets (Spotify/SoundCloud). Want a stylish clip? Check my portfolio!</p>
+              <h1>Backend</h1>
+              <p>Backend on Node.js/Python with REST/GraphQL APIs, auth (JWT/OAuth), DBs (MongoDB/PostgreSQL). Integrate with frontend, handle loads. Approach: SOLID principles, tests (Jest/Pytest), docs. Portfolio: APIs for bots and sites. Goal: reliable servers for any traffic.</p>
             </Card>
 
             <Card>
-              <h1>Networks</h1>
-              <p>Network pro: VPN setup (VLESS, Trojan, Hysteria2, Shadowsocks), traffic obfuscation, Linux servers. Protocols for privacy and anti-censorship. Automate via scripts, test with Wireshark. Perfect for secure apps and bots. Need to protect your traffic?</p>
+              <h1>Fullstack</h1>
+              <p>Fullstack developer: UI/UX to servers and deploy. Share projects on GitHub with open code. Approach: agile, user-centric, open-source contribs. Goals: end-to-end solutions that grow with business. Portfolio: 10+ apps (web, bots, dashboards).</p>
             </Card>
           </CardSwap>
 

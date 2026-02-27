@@ -178,7 +178,7 @@ const CardSwap = ({
   return (
     <div
       ref={container}
-      className="absolute bottom-0 right-0 transform translate-x-[5%] translate-y-[20%] origin-bottom-right perspective-[900px] overflow-visible max-[768px]:translate-x-[25%] max-[768px]:translate-y-[25%] max-[768px]:scale-[0.75]"
+      className="absolute bottom-0 right-0 transform translate-x-[5%] translate-y-[20%] origin-bottom-right perspective-[900px] overflow-visible max-[1200px]:scale-[0.8] max-[900px]:scale-[0.7] max-[900px]:translate-y-[5%]"
       style={{ width, height }}
     >
       {rendered}
