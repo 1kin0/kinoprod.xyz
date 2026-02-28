@@ -16,44 +16,45 @@ import CardSwap, { Card } from '/src/components/effects/CardSwap.jsx'
 function CreateProjectCards() {
   const projectsList = {
     first: {
-      description: 'Discord bot for instant weather updates: current conditions, forecasts, and smart notifications anywhere.',
       title: 'weathium',
-      link: 'https://github.com/1kin0?tab=repositories'
+      description: 'Discord bot for instant weather updates: current conditions, forecasts, and smart notifications anywhere.',
+      link: 'https://github.com/1kin0?tab=repositories',
+      tags: ['Python', 'Chromium']
     },
     second: {
-      description: 'Edit images and apply fun effects or stickers directly in your Discord chats effortlessly.',
       title: 'blurry',
-      link: 'https://github.com/1kin0?tab=repositories'
+      description: 'Edit images and apply fun effects or stickers directly in your Discord chats effortlessly.',
+      link: 'https://github.com/1kin0?tab=repositories',
+      tags: ['Python', 'Chromium']
     },
     third: {
       description: 'Experienced dev open for collaboration on bots, web apps, DevOps projects—reach out anytime!',
-      title: '',
-      link: 'https://github.com/1kin0?tab=repositories'
     },
     fourth: {
       description: 'Coming soon: exciting new project in development—stay tuned for updates and features.',
-      title: '',
-      link: ''
     },
     fifth: {
-      description: 'Sleek portfolio site showcasing my dev projects, tech skills, and easy contact options.',
       title: 'verc.im',
-      link: 'https://github.com/1kin0?tab=repositories'
+      description: 'Sleek portfolio site showcasing my dev projects, tech skills, and easy contact options.',
+      link: 'https://github.com/1kin0?tab=repositories',
+      tags: ['React', 'JavaScript']
     },
     last: {
-      description: 'will be here!',
       title: 'your idea',
-      link: '#contact'
+      description: 'will be here!',
     },
   };
   
   return (
     <>
       {Object.values(projectsList).map((project, index) => (
-        <SpotlightCard key={project.title || index}>
-          <a href={project.link}><h2 className="text-3xl font-bold">{project.title}</h2></a>
-          <span className="text-gray-400">{project.description}</span>
-        </SpotlightCard>
+          <SpotlightCard
+            link={project.link}
+            tags={project.tags}
+          >
+            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <p className="text-sm">{project.description}</p>
+          </SpotlightCard>
       ))}
     </>
   );
